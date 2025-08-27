@@ -35,15 +35,16 @@ task-manager/
 - server.js          # Server bootstrap
 
 ## env
-Copy code
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_jwt_secret
-SENDGRID_API_KEY=your_sendgrid_key
-PORT=5000
+- Copy code
+- MONGO_URI=your_mongodb_connection
+- JWT_SECRET=your_jwt_secret
+- SENDGRID_API_KEY=your_sendgrid_key
+- PORT=5000
 
 ## 👨‍💻 Author
 Ajibona Raheem
 📧 ajibonaraheem@gmail.com
+
 
 
 
