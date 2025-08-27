@@ -43,7 +43,8 @@ task-manager/
 
 ## 👨‍💻 Author
 Ajibona Raheem
-📧 ajibonaraheem@gmail.com
+- 📧 ajibonaraheem@gmail.com
+
 
 
 
