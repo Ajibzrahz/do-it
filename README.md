@@ -26,32 +26,26 @@ It allows users to **create, update, delete, and categorize tasks**, set deadlin
 
 ## 📂 Project Structure
 task-manager/
-│── controllers/       # Business logic
-│── models/            # Mongoose schemas
-│── routes/            # API endpoints
-│── middlewares/       # Error handling & authentication
-│── utils/             # Helpers (email service, etc.)
-│── app.js             # Main entry point
-│── server.js          # Server bootstrap
+- controllers/       # Business logic
+- models/            # Mongoose schemas
+- routes/            # API endpoints
+- middlewares/       # Error handling & authentication
+- utils/             # Helpers (email service, etc.)
+- app.js             # Main entry point
+- server.js          # Server bootstrap
 
-#env
+## env
 Copy code
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_jwt_secret
 SENDGRID_API_KEY=your_sendgrid_key
 PORT=5000
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Ajibona Raheem
 📧 ajibonaraheem@gmail.com
 
 
-
-
-
-
-
-Ask ChatGPT
 
 
 
