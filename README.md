@@ -25,9 +25,10 @@ It allows users to **create, update, delete, and categorize tasks**, set deadlin
 ---
 
 ## 📂 Project Structure
-│── controllers/ # Business logic
-│── models/ # Mongoose schemas
-│── routes/ # API endpoints
-│── middlewares/ # Error handling & auth
-│── utils/ # Helpers (e.g. email service)
-│── app.js # Main entry point
+- controllers/ # Business logic
+- models/ # Mongoose schemas
+-  routes/ # API endpoints
+- middlewares/ # Error handling & auth
+- utils/ # Helpers (e.g. email service)
+- app.js # Main entry point
+
