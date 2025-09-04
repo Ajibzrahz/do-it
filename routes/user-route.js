@@ -2,6 +2,7 @@ import express from "express";
 import {
   deleteProfile,
   login,
+  logout,
   register,
   updateProfile,
 } from "../controllers/user-controller.js";
@@ -20,6 +21,7 @@ userRouter
   .route("/register")
   .post(validateRequest(RegisterValidator), register);
 userRouter.route("/login").post(validateRequest(loginValidator), login);
+userRouter.route("/logout").get(logout);
 userRouter
   .route("/profile")
   .get(Authentication, Profile)

@@ -76,6 +76,16 @@ const login = async (req, res, next) => {
   }
 };
 
+const logout = async (req, res) => {
+  res
+    .cookie("userToken", "logout", {
+      expires: new Date(Date.now()),
+      httpOnly: true,
+    })
+    .status(StatusCodes.ACCEPTED)
+    .json({ msg: "user logged out" });
+};
+
 const Profile = async (req, res, next) => {
   const { id } = req.user;
   try {
@@ -165,4 +175,4 @@ const updateProfile = async (req, res, next) => {
   }
 };
 
-export { register, login, Profile, deleteProfile, updateProfile };
+export { register, login, Profile, deleteProfile, updateProfile, logout };
