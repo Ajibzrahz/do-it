@@ -18,7 +18,10 @@ const register = async (req, res, next) => {
       return next(err);
     }
 
-    const createUser = new userModel(payload);
+    const isFirstAccount = (await userModel.countDocuments({})) === 0;
+    const role = isFirstAccount ? "admin" : "user";
+
+    const createUser = new userModel({ ...payload, role: role });
     const saveUser = await createUser.save();
 
     const token = saveUser.generate();
